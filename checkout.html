@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PayPal JS SDK Standard Integration</title>
-  </head>
-  <body>
-    <div id="paypal-button-container"></div>
-    <p id="result-message"></p>
-    <!-- Replace the "test" client-id value with your client-id -->
-    <script src="https://www.paypal.com/sdk/js?client-id=test&components=buttons&enable-funding=paylater,venmo,card" data-sdk-integration-source="integrationbuilder_sc"></script>
-    <script src="app.js"></script>
-  </body>
+    <title>Your Simple Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Simple Website</h1>
+    </header>
+
+    <section>
+        <h2>About Us</h2>
+        <p>This is a simple website created using HTML and CSS.</p>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>You can contact us at <a href="mailto:info@example.com">info@example.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Simple Website</p>
+    </footer>
+
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <input type="hidden" name="cmd" value="_xclick">
+    <input type="hidden" name="business" value="richard.rocketry@gmail.com">
+    <input type="hidden" name="item_name" value="Nakka-Rocketry_v2023 ISO">
+    <input type="hidden" name="item_number" value="1">
+    <input type="hidden" name="amount" value="15.00">
+    <input type="hidden" name="shipping" value="0.00">
+    <input type="hidden" name="no_shipping" value="1">
+    <input type="hidden" name="return" value="http://www.nakka-rocketry.net/cdrom.html">
+    <input type="hidden" name="cancel_return" value="http://www.nakka-rocketry.net/cdrom.html">
+    <input type="hidden" name="cn" value="Comments are welcome:">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but23.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+  </form>
+</body>
 </html>
+
+
+
+
